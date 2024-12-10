@@ -3,7 +3,7 @@ Written in Python3
 Image encryption system using RSA and AES methods.
 
 • Before attempting to run the script, ensure to install required dependencies. To do this, run:
-# pip install -r requirements.txt
+pip install -r requirements.txt
 
 If facing any issues with python3 or ModuleNotFoundError: No module named 'Crypto' or similar error, try installing a creating a virtual environment. Install dependencies and run the script from within this virtual environment. 
 
