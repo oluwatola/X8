@@ -12,6 +12,9 @@ Pycryptodome library is used to achieve encryption objectives. Check out library
 Also attached is some documentation on Pycryptodome.
 
 This project accomplished the following:
+
 •	Developed a user interface via terminal where users can select and upload image files (JPEG, PNG) and implement encryption and decryption processes for both AES and RSA, with the option for users to select their preferred method.
+
 •	Included functionality for both encryption and decryption processes, testing with different image formats.
+
 •	Demonstrated the decryption process to restore the original image using the appropriate key.
