@@ -1,5 +1,6 @@
 # Xcrypter Project
-Written in Python3
+Written in Python3.
+
 Image encryption system using RSA and AES methods.
 
 • Before attempting to run the script, ensure to install required dependencies. To do this, run:
