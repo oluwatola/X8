@@ -17,7 +17,7 @@ from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.backends import default_backend
 from tkinter import Tk, Label, Button, Entry, filedialog, messagebox, OptionMenu, StringVar, Checkbutton, IntVar, ttk
 import customtkinter as ctk
-from datetime import datetime, UTC, timedelta
+from datetime import datetime, timedelta, timezone
 import subprocess
 import threading
 from queue import Queue
@@ -27,6 +27,7 @@ CHUNK_SIZE_RSA = 190  # For RSA-2048, max chunk size for encryption is 190 bytes
 AES_KEY_SIZE = 256  # in bits
 AES_IV_SIZE = 16  # in bytes
 LOG_FILE = 'encryption_log.txt'
+UTC = timezone.utc
 
 # Setup Logging
 logging.basicConfig(filename=LOG_FILE, level=logging.INFO, 
