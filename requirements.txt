@@ -2,3 +2,4 @@ pycryptodome
 pillow
 art
 pyopenssl
+customtkinter
