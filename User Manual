@@ -1,0 +1,28 @@
+Install dependencies in requirements.txt
+grant executable permissions to python script.
+launch the script.
+if no keypairs exist, generate new RSA keys by clicking the "generate New keys" button. Most operations will require a key pair. In practice, one would need a recipient's public key and your own private key. 
+
+to ENCRYPT a file:
+(your) Sender's private keys are required to append a digital signature, a mandatory process in the encryption algorithm. 
+Select the desired plaintext file (hold ctrl/cmd while clicking to select multiple files).
+select desired encryption method (AES/RSA/Hybrid).
+if RSA/Hybrid, add recipient's public key which will be used for the encryption.
+select private key (to be used for signing).
+
+(optional: select "Use certificate" checkbox and attach existing certificate. if none exists, generate a certificate by clicking the designated button).
+(self-signed certificate generation requires a private key, and trusted CA certificate will require in addition, a valid domain name).
+(attach optional certificate).
+click 'encrypt' and wait for success notification. If AES is used, note the generated AES Key, and secure it preferably with a HSM or a secure KMS.
+
+
+to DECRYPT an encrypted file which you have "received":
+Select the desired ciphertext file (hold ctrl/cmd while clicking to select multiple files).
+if a certificate was attached during encryption, the system will attempt to retrieve it and extract a public key for the verification process.
+or input sender's public key (for verification of digital signature. if verification fails, file will not be decrypted).
+
+if extension is .aes, input AES Key file for AES decryption process.
+if extension is not .aes, input recipient's (your) private key (for ciphertext decryption).
+click 'decrypt' and wait for success message. (Note: RSA decryption time is proportional to encrypted file size).
+
+Cheers!
