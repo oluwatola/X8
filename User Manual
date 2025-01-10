@@ -1,4 +1,5 @@
 Install dependencies in requirements.txt
+Also install certbot via appropriate method (apt-get(linux) or brew(macOS)).
 grant executable permissions to python script.
 launch the script.
 if no keypairs exist, generate new RSA keys by clicking the "generate New keys" button. Most operations will require a key pair. In practice, one would need a recipient's public key and your own private key. 
